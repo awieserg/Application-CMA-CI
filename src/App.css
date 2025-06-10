@@ -1,0 +1,99 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em rgba(139, 92, 246, 0.8));
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em rgba(236, 72, 153, 0.8));
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.2), 0 2px 4px -2px rgba(139, 92, 246, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(139, 92, 246, 0.3), 0 4px 6px -4px rgba(139, 92, 246, 0.2);
+}
+
+.read-the-docs {
+  color: #8B5CF6;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Animation for elements */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Game-like elements */
+.game-card {
+  background: linear-gradient(45deg, #f5f3ff, #ffffff);
+  border: 2px solid #ddd6fe;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 8px 16px rgba(139, 92, 246, 0.15);
+  transition: all 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 20px rgba(139, 92, 246, 0.25);
+  border-color: #8B5CF6;
+}
+
+.btn-game {
+  background: linear-gradient(90deg, #10B981, #34D399);
+  color: white;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(16, 185, 129, 0.3);
+  transition: all 0.2s ease;
+}
+
+.btn-game:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(16, 185, 129, 0.4);
+}
+
+.btn-game:active {
+  transform: translateY(1px);
+}
